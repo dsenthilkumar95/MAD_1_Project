@@ -1,0 +1,1 @@
+<h2>Admin Dashboard</h2>{% for u in users %}<p>{{u.name}} - {{u.role}} {% if not u.approved %}<a href='/approve_user/{{u.id}}'>Approve</a>{% endif %}</p>{% endfor %}
